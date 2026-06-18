@@ -17,6 +17,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String)
     email = Column(String)
+    description = Column(String)
 
 # 4. Create tables — pass engine INSTANCE, not the function
 Base.metadata.create_all(bind=engine)
